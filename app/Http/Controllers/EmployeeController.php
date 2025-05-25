@@ -21,15 +21,7 @@ class EmployeeController extends Controller
 
     public function store(Request $request)
     {
-        $request->validate([
-            'fname' => 'required|max:255|string',
-            'Midname' => 'required|max:255|string',
-            'lname' => 'required|max:255|string',
-            'age' => 'required|integer',
-            'add' => 'required|max:255|string',
-            'zip' => 'required|integer',
-
-        ]);
+        hahahahah
 
         employee::create($request->all());
         return view('employee.create');
